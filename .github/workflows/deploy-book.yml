@@ -19,28 +19,28 @@ jobs:
         os: [ubuntu-latest]
         python-version: [3.8]
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    # Install dependencies
-    - uses: conda-incubator/setup-miniconda@master
-      with:
-        channels: conda-forge
-        channel-priority: strict
-        activate-environment: cookbook-dev
-        auto-update-conda: false
-        python-version: 3.8
-        environment-file: environment.yml
-        mamba-version: '*'
-        use-mamba: true
-    # Build the book
-    - name: Build the book
-      run: |
-        cd notebooks
-        jupyter-book build .
-    # Deploy the book's HTML to gh-pages branch
-    - name: GitHub Pages action
-      uses: peaceiris/actions-gh-pages@v3.6.1
-      if: github.ref == 'refs/heads/main'
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: notebooks/_build/html
+      # Install dependencies
+      - uses: conda-incubator/setup-miniconda@master
+        with:
+          channels: conda-forge
+          channel-priority: strict
+          activate-environment: cookbook-dev
+          auto-update-conda: false
+          python-version: 3.8
+          environment-file: environment.yml
+          mamba-version: '*'
+          use-mamba: true
+      # Build the book
+      - name: Build the book
+        run: |
+          cd notebooks
+          jupyter-book build .
+      # Deploy the book's HTML to gh-pages branch
+      - name: GitHub Pages action
+        uses: peaceiris/actions-gh-pages@v3.6.1
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: notebooks/_build/html
