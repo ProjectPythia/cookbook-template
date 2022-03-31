@@ -1,0 +1,6 @@
+format: jb-book
+root: landing-page
+parts:
+  - caption: Introduction
+    chapters:
+      - file: notebook-template

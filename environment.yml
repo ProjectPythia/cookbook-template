@@ -1,0 +1,22 @@
+name: cookbook-dev
+channels:
+  - conda-forge
+dependencies:
+  - cartopy
+  - jupyter-book
+  - jupyterlab
+  - matplotlib
+  - nc-time-axis
+  - netcdf4
+  - numpy
+  - pip
+  - pre-commit
+  - pyproj
+  - pythia-datasets
+  - python=3.8
+  - scipy
+  - ffmpeg
+  - sqlalchemy<1.4
+  - xarray
+  - pip:
+      - sphinx-pythia-theme
