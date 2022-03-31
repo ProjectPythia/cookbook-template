@@ -23,15 +23,15 @@ jobs:
 
     # Install dependencies
     - uses: conda-incubator/setup-miniconda@master
-        with:
-          channels: conda-forge
-          channel-priority: strict
-          activate-environment: cookbook-dev
-          auto-update-conda: false
-          python-version: 3.8
-          environment-file: environment.yml
-          mamba-version: '*'
-          use-mamba: true
+      with:
+        channels: conda-forge
+        channel-priority: strict
+        activate-environment: cookbook-dev
+        auto-update-conda: false
+        python-version: 3.8
+        environment-file: environment.yml
+        mamba-version: '*'
+        use-mamba: true
     # Build the book
     - name: Build the book
       run: |
