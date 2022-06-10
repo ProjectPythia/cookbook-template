@@ -21,8 +21,8 @@ on:
       use_cached_environment:
         description: 'Flag for whether we should attempt to retrieve a previously cached environment.'
         required: false
-        default: true
-        type: boolean
+        default: 'true'
+        type: string  # had a lot of trouble with boolean types, see https://github.com/actions/runner/issues/1483
 
 jobs:
   build:
@@ -42,7 +42,7 @@ jobs:
           use-mamba: true
 
       - name: Set cache date
-        if: inputs.use_cached_environment == 'true'
+        if: ${{ inputs.use_cached_environment == 'true' }}
         run: echo "DATE=$(date +'%Y%m%d')" >> $GITHUB_ENV
 
       - uses: actions/cache@v3
@@ -54,7 +54,7 @@ jobs:
 
       - name: Update environment
         if: |
-          ${{ inputs.use_cached_environment == 'false' }}
+          ${{ inputs.use_cached_environment != 'true' }}
           || $${ steps.cache.outputs.cache-hit != 'true' }}
         run: mamba env update -n ${{ inputs.environment_name }} -f ${{ inputs.environment_file }}
 
