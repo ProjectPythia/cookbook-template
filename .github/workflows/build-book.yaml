@@ -46,7 +46,7 @@ jobs:
         run: echo "DATE=$(date +'%Y%m%d')" >> $GITHUB_ENV
 
       - uses: actions/cache@v3
-        if: ${{ inputs.use_cached_environment == 'true' }}
+        if: inputs.use_cached_environment == 'true'
         with:
           path: /usr/share/miniconda3/envs/${{ inputs.environment_name }}
           key: linux-64-conda-${{ hashFiles('${{ inputs.environment_file }}') }}-${{ env.DATE }}
@@ -55,11 +55,12 @@ jobs:
       - run: |
           echo '${{ inputs.use_cached_environment }}'
           echo '${{ steps.cache.outputs.cache-hit }}'
+          echo
 
       - name: Update environment
         if: |
-          ${{ inputs.use_cached_environment != 'true' }}
-          || $${ steps.cache.outputs.cache-hit != 'true' }}
+          inputs.use_cached_environment != 'true'
+          || steps.cache.outputs.cache-hit != 'true'
         run: mamba env update -n ${{ inputs.environment_name }} -f ${{ inputs.environment_file }}
 
       - name: Build the book
