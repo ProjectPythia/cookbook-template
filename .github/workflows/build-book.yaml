@@ -19,6 +19,11 @@ on:
         default: './'
         type: string
 
+env:
+  CACHE_NUMBER: 1  # increase to reset cache manually
+# Environment caching to speed up builds, directly inspired by
+# https://dev.to/epassaro/caching-anaconda-environments-on-github-actions-2d08
+
 jobs:
   build:
     runs-on: ubuntu-latest
