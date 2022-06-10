@@ -52,6 +52,10 @@ jobs:
           key: linux-64-conda-${{ hashFiles('${{ inputs.environment_file }}') }}-${{ env.DATE }}
         id: cache
 
+      - run: |
+          echo '${{ inputs.use_cached_environment }}'
+          echo '${{ steps.cache.outputs.cache-hit }}'
+
       - name: Update environment
         if: |
           ${{ inputs.use_cached_environment != 'true' }}
