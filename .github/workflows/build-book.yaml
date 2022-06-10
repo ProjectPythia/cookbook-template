@@ -18,11 +18,11 @@ on:
         required: false
         default: './'
         type: string
-
-env:
-  CACHE_NUMBER: 1  # increase to reset cache manually
-# Environment caching to speed up builds, directly inspired by
-# https://dev.to/epassaro/caching-anaconda-environments-on-github-actions-2d08
+      use_cached_environment:
+        description: 'Flag for whether we should attempt to retrieve a previously cached environment.'
+        required: false
+        default: true
+        type: boolean
 
 jobs:
   build:
@@ -42,16 +42,20 @@ jobs:
           use-mamba: true
 
       - name: Set cache date
+        if: inputs.use_cached_environment == 'true'
         run: echo "DATE=$(date +'%Y%m%d')" >> $GITHUB_ENV
 
       - uses: actions/cache@v3
+        if: inputs.use_cached_environment == 'true'
         with:
           path: /usr/share/miniconda3/envs/${{ inputs.environment_name }}
-          key: linux-64-conda-${{ hashFiles('${{ inputs.environment_file }}') }}-${{ env.DATE }}-${{ env.CACHE_NUMBER }}
+          key: linux-64-conda-${{ hashFiles('${{ inputs.environment_file }}') }}-${{ env.DATE }}
         id: cache
 
       - name: Update environment
-        if: steps.cache.outputs.cache-hit != 'true'
+        if: |
+          inputs.use_cached_environment == 'false'
+          || steps.cache.outputs.cache-hit != 'true'
         run: mamba env update -n ${{ inputs.environment_name }} -f ${{ inputs.environment_file }}
 
       - name: Build the book
