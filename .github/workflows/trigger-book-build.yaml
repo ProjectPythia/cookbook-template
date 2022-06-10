@@ -1,0 +1,17 @@
+name: trigger-book-build
+on:
+  pull_request:
+
+jobs:
+  build:
+    uses: ProjectPythiaTutorials/radar-cookbook/.github/workflows/build-book.yaml@main  # change this after merge
+    with:
+      environment_name: cookbook-dev
+      environment_file: environment.yml
+      path_to_notebooks: notebooks/
+  link-check:
+    uses: ProjectPythiaTutorials/radar-cookbook/.github/workflows/link-checker.yaml@main  # change this after merge
+    with:
+      environment_name: cookbook-dev
+      environment_file: environment.yml
+      path_to_notebooks: notebooks/
