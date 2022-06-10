@@ -3,4 +3,5 @@ channels:
   - conda-forge
 dependencies:
   - jupyter-book
-  - sphinx-pythia-theme
+  - pip:
+      - sphinx-pythia-theme
