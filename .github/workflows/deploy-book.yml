@@ -5,41 +5,41 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
   workflow_dispatch:
 
-# This job installs dependencies, build the book, and pushes it to `gh-pages`
 jobs:
-  build-and-deploy-book:
+  build:
+    uses: ./.github/workflows/build-book.yaml
+    with:
+      environment_name: cookbook-dev
+      environment_file: environment.yml
+      path_to_notebooks: notebooks/
+
+  deploy:
+    needs: build
     runs-on: ubuntu-latest
     defaults:
       run:
         shell: bash -l {0}
     steps:
-      - uses: actions/checkout@v2
-
-      # Install dependencies
-      - uses: conda-incubator/setup-miniconda@master
+      - name: Download Artifact Book
+        uses: dawidd6/action-download-artifact@v2.21.0
         with:
-          channels: conda-forge
-          channel-priority: strict
-          activate-environment: cookbook-dev
-          auto-update-conda: false
-          python-version: 3.8
-          environment-file: environment.yml
-          mamba-version: '*'
-          use-mamba: true
-      # Build the book
-      - name: Build the book
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          workflow: build-book.yaml
+          commit: ${{ github.sha }}
+          name: book-zip-${{ github.event.number }}
+
+      - name: Unzip the book
         run: |
-          cd notebooks
-          jupyter-book build .
-      # Deploy the book's HTML to gh-pages branch
-      - name: GitHub Pages action
-        uses: peaceiris/actions-gh-pages@v3.6.1
+          rm -rf notebooks/_build/html
+          unzip book.zip
+          rm -f book.zip
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3.8.0
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: notebooks/_build/html
+          keep_files: true  # This preserves existing previews from open PRs
