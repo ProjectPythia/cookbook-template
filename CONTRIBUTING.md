@@ -15,7 +15,7 @@ hosted on the Project Pythia website.
     1. See the GitHub tutorial in Foundations for how to set up a clone
 1. Create the environment
     1. Edit `environment.yml`: change the name to `<your-cookbook-name>-dev` and add all required libraries and other dependencies under `dependencies:`
-    1. Create the Conda environment with `conda env create -f=environment.yml`. If it crashes, try running `conda config --set channel_priority strict`
+    1. Create the Conda environment with `conda env create -f environment.yml`. If it crashes, try running `conda config --set channel_priority strict`
     1. Activate your environment with `conda activate <env-name>`
 1. Add content
     1. Using the notebook template, add your content. Add folders to organize notebooks into sections
