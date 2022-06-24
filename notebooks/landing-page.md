@@ -22,7 +22,7 @@ You can either run the notebook using [Binder](https://mybinder.org/) or on your
 
 The simplest way to interact with a Jupyter Notebook is through
 [Binder](https://mybinder.org/), which enables the execution of a
-Jupyter Book in the cloud. The details of how this works are not
+[Jupyter Book](https://jupyterbook.org) in the cloud. The details of how this works are not
 important for now. All you need to know is how to launch a Pythia
 Cookbooks chapter via Binder. Simply navigate your mouse to
 the top right corner of the book chapter you are viewing and click
@@ -36,30 +36,30 @@ a live Jupyter notebook are described in [Getting Started with
 Jupyter](https://foundations.projectpythia.org/foundations/getting-started-jupyter.html).
 
 ### Running on Your Own Machine
-If you are interested in running this material locally on your computer, you will need to follow this workflow:
-(Replace "cookbook-example" with the title of your cookbooks) 
+If you are interested in running this material locally on your computer, you will need to follow this workflow: 
+  
+(Replace "cookbook-example" with the title of your cookbooks)   
 
-1.
-   Clone the ["cookbook-example"](https://github.com/ProjectPythiaTutorials/cookbook-example) repository
-    ```bash
+1. Clone the `https://github.com/ProjectPythiaTutorials/cookbook-example` repository: 
+   
+   ```bash
     git clone https://github.com/ProjectPythiaTutorials/cookbook-example.git
-    ```
-
-2. Move into the `cookbook-example` directory
+    ```  
+1. Move into the `cookbook-example` directory
     ```bash
-    cd radar-cookbook
-    ```
-
-3. Create and activate your conda environment from the `environment.yml` file
+    cd cookbook-example
+    ```  
+1. Create and activate your conda environment from the `environment.yml` file
     ```bash
     conda env create -f environment.yml
-    conda activate radar-cookbook-dev
-    ```
-
-4.  Move into the `notebooks` directory and start up Jupyterlab
+    conda activate cookbook-example
+    ```  
+1.  Move into the `notebooks` directory and start up Jupyterlab
     ```bash
     cd notebooks/
     jupyter lab
     ```
 
 At this point, you can interact with the notebooks! Make sure to check out the ["Getting Started with Jupyter"](https://foundations.projectpythia.org/foundations/getting-started-jupyter.html) content from the [Pythia Foundations](https://foundations.projectpythia.org/landing-page.html) material if you are new to Jupyter or need a refresher.
+
+
