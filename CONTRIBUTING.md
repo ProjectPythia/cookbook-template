@@ -10,10 +10,11 @@ The following is a step-by-step guide to getting your cookbook idea
 hosted on the [Project Pythia Cookbooks gallery](https://projectpythia.org/cookbook-gallery.html).
 
 1. Use the template
+    1. If you don't already have a GitHub account, create one by following the [Getting Started with GitHub guide](https://foundations.projectpythia.org/foundations/getting-started-github.html)
     1. On https://github.com/ProjectPythiaTutorials/cookbook-template, click "Use this template"
     1. Create the repo under your account with a descriptive name, followed by `-cookbook` (e.g. `hydrology-cookbook`, `hpc-cookbook`, `cesm-cookbook`, etc.)
     1. In the settings, enable GitHub Pages and make the source `gh-pages/(root)`
-    1. See the [GitHub tutorial in Foundations](https://foundations.projectpythia.org/foundations/getting-started-github.html) for how to set up a clone
+    1. Clone the repo in your local workspace (see the [Cloning and Forking a Repository tutorial in Foundations](https://foundations.projectpythia.org/foundations/github/github-cloning-forking.html) for how to set up a clone) and `cd` into your cookbook directory
 1. Create the environment
     1. Edit `environment.yml`: change the name to `<your-cookbook-name>-dev` (e.g. `cesm-cookbook-dev`) and add all required libraries and other dependencies under `dependencies:`. Commit the changes
     1. Create the Conda environment with `conda env create -f environment.yml`. If it crashes, try running `conda config --set channel_priority strict`
