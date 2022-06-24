@@ -6,4 +6,4 @@ This repository includes all the basic infrastructure to create your content and
 
 You can use the `notebook-template` in `/notebooks` as your content template!
 
-Once you have made your new content, add it to the table of contents (`notebooks/_toc.yml`) file, and push it to Github!     
+Once you have made your new content, add it to the table of contents (`notebooks/_toc.yml`) file, and push it to Github!
