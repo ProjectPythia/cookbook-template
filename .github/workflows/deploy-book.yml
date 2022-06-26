@@ -23,11 +23,8 @@ jobs:
         shell: bash -l {0}
     steps:
       - name: Download Artifact Book
-        uses: dawidd6/action-download-artifact@v2.21.1
+        uses: actions/download-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          workflow: build-book.yaml
-          commit: ${{ github.sha }}
           name: book-zip-${{ github.event.number }}
 
       - name: Unzip the book
