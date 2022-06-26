@@ -1,5 +1,7 @@
 # (Replace_with_your_title) Cookbook
 
+**IGNORE THIS TEXT**
+
 This Project Pythia Cookbook covers ... (replace `...` with the main subject of your cookbook ... e.g., *working with radar data in Python*)
 
 ## Motivation
@@ -36,12 +38,12 @@ a live Jupyter notebook are described in [Getting Started with
 Jupyter](https://foundations.projectpythia.org/foundations/getting-started-jupyter.html).
 
 ### Running on Your Own Machine
-If you are interested in running this material locally on your computer, you will need to follow this workflow: 
-  
+If you are interested in running this material locally on your computer, you will need to follow this workflow:
+
 (Replace "cookbook-example" with the title of your cookbooks)   
 
-1. Clone the `https://github.com/ProjectPythiaTutorials/cookbook-example` repository: 
-   
+1. Clone the `https://github.com/ProjectPythiaTutorials/cookbook-example` repository:
+
    ```bash
     git clone https://github.com/ProjectPythiaTutorials/cookbook-example.git
     ```  
@@ -61,5 +63,3 @@ If you are interested in running this material locally on your computer, you wil
     ```
 
 At this point, you can interact with the notebooks! Make sure to check out the ["Getting Started with Jupyter"](https://foundations.projectpythia.org/foundations/getting-started-jupyter.html) content from the [Pythia Foundations](https://foundations.projectpythia.org/landing-page.html) material if you are new to Jupyter or need a refresher.
-
-
