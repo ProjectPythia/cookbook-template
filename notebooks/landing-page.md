@@ -1,7 +1,5 @@
 # (Replace_with_your_title) Cookbook
 
-**IGNORE THIS TEXT**
-
 This Project Pythia Cookbook covers ... (replace `...` with the main subject of your cookbook ... e.g., *working with radar data in Python*)
 
 ## Motivation
