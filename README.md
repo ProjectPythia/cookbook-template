@@ -1,5 +1,8 @@
 # Cookbook Template
 
+[![build-book](https://github.com/ProjectPythiaTutorials/cookbook-template/actions/workflows/build-book.yaml/badge.svg)](https://github.com/ProjectPythiaTutorials/cookbook-template/actions/workflows/build-book.yaml)
+[![link-checker](https://github.com/ProjectPythiaTutorials/cookbook-template/actions/workflows/link-checker.yaml/badge.svg)](https://github.com/ProjectPythiaTutorials/cookbook-template/actions/workflows/link-checker.yaml)
+
 This is a template for creating [Project Pythia](https://projectpythia.org) Cookbooks.
 
 This repository includes all the basic infrastructure to create your content and host it online. You can use this template by selecting the green "Use this Template" button at the top of the page.
