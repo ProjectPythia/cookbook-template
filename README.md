@@ -1,7 +1,6 @@
 # Cookbook Template
 
-[![build-book](https://github.com/ProjectPythiaTutorials/cookbook-template/actions/workflows/build-book.yaml/badge.svg)](https://github.com/ProjectPythiaTutorials/cookbook-template/actions/workflows/build-book.yaml)
-[![link-checker](https://github.com/ProjectPythiaTutorials/cookbook-template/actions/workflows/link-checker.yaml/badge.svg)](https://github.com/ProjectPythiaTutorials/cookbook-template/actions/workflows/link-checker.yaml)
+[![nightly-build](https://github.com/ProjectPythiaTutorials/cookbook-template/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythiaTutorials/cookbook-template/actions/workflows/nightly-build.yaml)
 
 This is a template for creating [Project Pythia](https://projectpythia.org) Cookbooks.
 
