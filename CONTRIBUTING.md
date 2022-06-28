@@ -21,10 +21,11 @@ hosted on the [Project Pythia Cookbooks gallery](https://projectpythia.org/cookb
     1. Create the Conda environment with `conda env create -f environment.yml`. If it crashes, try running `conda config --set channel_priority strict`
     1. Activate your environment with `conda activate <env-name>`
 1. Add content
-    1. After [creating a new git branch](https://foundations.projectpythia.org/foundations/github/git-branches.html), edit (and duplicate as necessary) the notebook template `notebooks/notebook-template.ipynb` to add your content. Add folders to organize notebooks into sections if applicable
+    1. After [creating a new git branch](https://foundations.projectpythia.org/foundations/github/git-branches.html), edit (and duplicate as necessary) the notebook template `notebooks/notebook-template.ipynb` to add your content. Add folders to organize notebooks into sections if applicable.
     1. Add the notebooks to `_toc.yml`. See [`radar-cookbook/notebooks/_toc.yml`](https://github.com/ProjectPythiaTutorials/radar-cookbook/blob/main/notebooks/_toc.yml) for syntax
+    1. Replace the `thumbnail.svg` file with a thumbnail image relevant to your cookbook
     1. Change `README.md` to include your cookbook title, various badges, a sentence or two describing the cookbook, and a link to the landing page. See the [Radar Cookbook](https://github.com/ProjectPythiaTutorials/radar-cookbook/blob/main/README.md) for an example
-    1. Commit your changes with git, and [open a Pull Request](https://foundations.projectpythia.org/foundations/github/github-pull-request.html) on your cookbook repo. When you open a PR there, the github-actions bot will comment a link to a preview of your cookbook
+    4. Commit your changes with git, and [open a Pull Request](https://foundations.projectpythia.org/foundations/github/github-pull-request.html) on your cookbook repo. When you open a PR there, the github-actions bot will comment a link to a preview of your cookbook
 1. Transfer cookbook to the [ProjectPythiaTutorials](https://github.com/ProjectPythiaTutorials) organization
     1. Navigate to the settings of your repo, scroll down to the Danger Zone, and click "Transfer"
         1. For ProjectPythiaTutorials owners or members: type "ProjectPythiaTutorials", confirm, and transfer.
