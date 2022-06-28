@@ -7,7 +7,7 @@ and should direct the reader towards the [Foundations material](https://foundati
 background knowledge.
 
 The following is a step-by-step guide to getting your cookbook idea
-hosted on the [Project Pythia Cookbooks gallery](https://projectpythia.org/cookbook-gallery.html).
+hosted on the [Project Pythia Cookbooks gallery](https://cookbooks.projectpythia.org).
 
 1. Use the template
     1. If you don't already have a GitHub account, create one by following the [Getting Started with GitHub guide](https://foundations.projectpythia.org/foundations/getting-started-github.html)
