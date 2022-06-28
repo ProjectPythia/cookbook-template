@@ -12,7 +12,7 @@ This Project Pythia Cookbook covers ... (replace `...` with the main subject of 
 
 ### Contributors
 
-*Auto-generated list of contributors to the repository*
+[//]: contributor-faces
 
 ## Motivation
 
