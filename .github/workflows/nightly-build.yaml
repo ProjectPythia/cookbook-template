@@ -11,11 +11,11 @@ jobs:
     with:
       environment_name: cookbook-dev
       environment_file: environment.yml
-      path_to_notebooks: notebooks/
+      path_to_notebooks: ./
 
   link-check:
     uses: ./.github/workflows/link-checker.yaml
     with:
       environment_name: cookbook-dev
       environment_file: environment.yml
-      path_to_notebooks: notebooks/
+      path_to_notebooks: ./
