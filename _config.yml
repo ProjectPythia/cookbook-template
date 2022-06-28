@@ -1,7 +1,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Pythia Foundations
+title: Project Pythia Cookbook Template
 author: the <a href="https://projectpythia.org/">Project Pythia</a> Community
 logo: notebooks/images/logos/pythia_logo-white-rtext.svg
 email: projectpythia@ucar.edu
@@ -34,12 +34,12 @@ sphinx:
     html_permalinks_icon: '<i class="fas fa-link"></i>'
     html_theme_options:
       home_page_in_toc: true
-      repository_url: https://github.com/ProjectPythia/pythia-foundations # Online location of your book
+      repository_url: https://github.com/ProjectPythiaCookbooks/cookbook-template/ # Online location of your book
       repository_branch: main # Which branch of the repository should be used when creating links (optional)
       use_issues_button: true
       use_repository_button: true
       use_edit_page_button: true
-      github_url: https://github.com/ProjectPythia
+      github_url: https://github.com/ProjectPythiaCookbooks
       twitter_url: https://twitter.com/project_pythia
       icon_links:
         - name: YouTube
@@ -47,7 +47,7 @@ sphinx:
           icon: fab fa-youtube-square
           type: fontawesome
       launch_buttons:
-        binderhub_url: https://binder-staging.2i2c.cloud/ 
+        binderhub_url: https://binder-staging.2i2c.cloud/
         notebook_interface: jupyterlab
       extra_navbar: |
         Theme by <a href="https://projectpythia.org">Project Pythia</a>.<br><br>
