@@ -47,7 +47,7 @@ sphinx:
           icon: fab fa-youtube-square
           type: fontawesome
       launch_buttons:
-        binderhub_url: https://binder-staging.2i2c.cloud/
+        binderhub_url: https://binder-staging.2i2c.cloud
         notebook_interface: jupyterlab
       extra_navbar: |
         Theme by <a href="https://projectpythia.org">Project Pythia</a>.<br><br>
@@ -59,7 +59,7 @@ sphinx:
         - name: Foundations
           url: https://foundations.projectpythia.org
         - name: Cookbooks
-          url: https://cookbooks.projectpythia.org/
+          url: https://cookbooks.projectpythia.org
         - name: Resources
           url: https://projectpythia.org/resource-gallery.html
         - name: Community
