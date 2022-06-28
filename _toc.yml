@@ -1,6 +1,6 @@
 format: jb-book
-root: landing-page
+root: README
 parts:
   - caption: Introduction
     chapters:
-      - file: notebook-template
+      - file: notebooks/notebook-template
