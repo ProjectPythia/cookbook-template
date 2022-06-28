@@ -4,6 +4,16 @@
 
 This Project Pythia Cookbook covers ... (replace `...` with the main subject of your cookbook ... e.g., *working with radar data in Python*)
 
+## Authors
+
+### Primary content author(s)
+
+- [First Author](@first-author)
+
+### Contributors
+
+*Auto-generated list of contributors to the repository*
+
 ## Motivation
 
 (Add a few sentences stating why this cookbook will be useful. What skills will you, "the chef", gain once you have reached the end of the cookbook?)
