@@ -13,7 +13,7 @@ jobs:
     with:
       environment_name: cookbook-dev
       environment_file: environment.yml
-      path_to_notebooks: notebooks/
+      path_to_notebooks: ./
 
   deploy:
     needs: build
@@ -29,7 +29,7 @@ jobs:
 
       - name: Unzip the book
         run: |
-          rm -rf notebooks/_build/html
+          rm -rf _build/html
           unzip book.zip
           rm -f book.zip
 
@@ -38,5 +38,5 @@ jobs:
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: notebooks/_build/html
+          publish_dir: _build/html
           keep_files: true  # This preserves existing previews from open PRs
