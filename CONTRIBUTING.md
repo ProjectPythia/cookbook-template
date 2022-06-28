@@ -22,8 +22,8 @@ hosted on the [Project Pythia Cookbooks gallery](https://projectpythia.org/cookb
     1. Activate your environment with `conda activate <env-name>`
 1. Add content
     1. After [creating a new git branch](https://foundations.projectpythia.org/foundations/github/git-branches.html), edit (and duplicate as necessary) the notebook template `notebooks/notebook-template.ipynb` to add your content. Add folders to organize notebooks into sections if applicable
-    1. Add the notebooks to `_toc.yml`. See [`radar-cookbook/_toc.yml`](https://github.com/ProjectPythiaCookbooks/radar-cookbook/blob/main/notebooks/_toc.yml) for syntax
-    1. Change `README.md` to include your cookbook title, various badges, a sentence or two describing the cookbook, and a link to the landing page. See the [Radar Cookbook](https://github.com/ProjectPythiaCookbooks/radar-cookbook/blob/main/README.md) for an example
+    1. Add the notebooks to `_toc.yml`. See [`radar-cookbook/_toc.yml`](https://github.com/ProjectPythiaTutorials/radar-cookbook/blob/main/notebooks/_toc.yml) for syntax
+    1. Change `README.md` to include your cookbook title, various badges, a sentence or two describing the cookbook, and a link to the landing page. See the [Radar Cookbook](https://github.com/ProjectPythiaTutorials/radar-cookbook/blob/main/README.md) for an example
     2. Change `.gitignore` to include any pages from local site builds made during development. These will be in a `_build` directory (check if you moved the target directory from `notebooks/_build`).
     3. Commit your changes with git, and [open a Pull Request](https://foundations.projectpythia.org/foundations/github/github-pull-request.html) on your cookbook repo. When you open a PR there, the github-actions bot will comment a link to a preview of your cookbook
 1. Transfer cookbook to the [ProjectPythiaCookbooks](https://github.com/ProjectPythiaCookbooks) organization
