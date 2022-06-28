@@ -11,7 +11,7 @@ This Project Pythia Cookbook covers ... (replace `...` with the main subject of 
 
 ## Authors
 
-[First Author](@first-author) *Acknowledge primary content authors here*
+[First Author](@first-author), [Second Author](@second-author), etc. *Acknowledge primary content authors here*
 
 ### Contributors
 
