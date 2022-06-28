@@ -11,6 +11,16 @@ This Project Pythia Cookbook covers ... (replace `...` with the main subject of 
 
 (Add a few sentences stating why this cookbook will be useful. What skills will you, "the chef", gain once you have reached the end of the cookbook?)
 
+## Authors
+
+[First Author](@first-author), [Second Author](@second-author), etc. *Acknowledge primary content authors here*
+
+### Contributors
+
+<a href="https://github.com/ProjectPythiaCookbooks/cookbook-template/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ProjectPythiaCookbooks/cookbook-template" />
+</a>
+
 ## Structure
 (State one or more sections that will comprise the notebook. E.g., *This cookbook is broken up into two main sections - "Foundations" and "Example Workflows."* Then, describe each section below.)
 
