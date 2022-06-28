@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; Pythia Foundations</title>
+    <title>Project Pythia Cookbook Contributor’s Guide &#8212; Pythia Foundations</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -51,7 +51,7 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="index" title="Index" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -216,6 +216,23 @@ All code in Pythia Cookbooks is licensed under Apache 2.0. All other non-code co
             </button>
             
             
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/CONTRIBUTING.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
             <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
@@ -227,10 +244,12 @@ All code in Pythia Cookbooks is licensed under Apache 2.0. All other non-code co
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/ProjectPythia/pythia-foundations/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/ProjectPythia/pythia-foundations/issues/new?title=Issue%20on%20page%20%2FCONTRIBUTING.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        
+        <a class="edit-button" href="https://github.com/ProjectPythia/pythia-foundations/edit/main/CONTRIBUTING.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
 </div>
 
@@ -256,13 +275,80 @@ All code in Pythia Cookbooks is licensed under Apache 2.0. All other non-code co
               
               <div>
                 
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="tex2jax_ignore mathjax_ignore section" id="project-pythia-cookbook-contributors-guide">
+<h1>Project Pythia Cookbook Contributor’s Guide<a class="headerlink" href="#project-pythia-cookbook-contributors-guide" title="Permalink to this headline"><i class="fas fa-link"></i></a></h1>
+<p>Project Pythia Cookbooks are collections of more advanced and domain-specific example
+workflows building on top of <a class="reference external" href="https://foundations.projectpythia.org/landing-page.html">Pythia Foundations</a>.
+They are <a class="reference external" href="https://en.wikipedia.org/wiki/Earth_science">geoscience</a>-focused
+and should direct the reader towards the <a class="reference external" href="https://foundations.projectpythia.org/landing-page.html">Foundations material</a> for any required
+background knowledge.</p>
+<p>The following is a step-by-step guide to getting your cookbook idea
+hosted on the <a class="reference external" href="https://projectpythia.org/cookbook-gallery.html">Project Pythia Cookbooks gallery</a>.</p>
+<ol class="simple">
+<li><p>Use the template</p>
+<ol class="simple">
+<li><p>If you don’t already have a GitHub account, create one by following the <a class="reference external" href="https://foundations.projectpythia.org/foundations/getting-started-github.html">Getting Started with GitHub guide</a></p></li>
+<li><p>On https://github.com/ProjectPythiaCookbooks/cookbook-template, click “Use this template”</p></li>
+<li><p>Choose “Include all branches”</p></li>
+<li><p>Create the repo under your account with a descriptive name, followed by <code class="docutils literal notranslate"><span class="pre">-cookbook</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">hydrology-cookbook</span></code>, <code class="docutils literal notranslate"><span class="pre">hpc-cookbook</span></code>, <code class="docutils literal notranslate"><span class="pre">cesm-cookbook</span></code>, etc.) by entering a name into the “Repository name” field and clicking on “Create repository from template”</p></li>
+<li><p>Your browser should be directed to the newly created repository under your GitHub account. Under Settings, enable GitHub Pages by changing the Source from “None” to <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> and clicking on “Save”</p></li>
+<li><p><a class="reference external" href="https://foundations.projectpythia.org/foundations/github/github-cloning-forking.html">Clone the repo</a> in your local workspace and <code class="docutils literal notranslate"><span class="pre">cd</span></code> into your cookbook directory</p></li>
+</ol>
+</li>
+<li><p>Create the environment</p>
+<ol class="simple">
+<li><p>Edit <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code>: change the name to <code class="docutils literal notranslate"><span class="pre">&lt;your-cookbook-name&gt;-dev</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">cesm-cookbook-dev</span></code>) and add all required libraries and other dependencies under <code class="docutils literal notranslate"><span class="pre">dependencies:</span></code>. Commit the changes</p></li>
+<li><p>Create the Conda environment with <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">-f</span> <span class="pre">environment.yml</span></code>. If it crashes, try running <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">config</span> <span class="pre">--set</span> <span class="pre">channel_priority</span> <span class="pre">strict</span></code></p></li>
+<li><p>Activate your environment with <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">&lt;env-name&gt;</span></code></p></li>
+</ol>
+</li>
+<li><p>Add content</p>
+<ol class="simple">
+<li><p>After <a class="reference external" href="https://foundations.projectpythia.org/foundations/github/git-branches.html">creating a new git branch</a>, edit (and duplicate as necessary) the notebook template <code class="docutils literal notranslate"><span class="pre">notebooks/notebook-template.ipynb</span></code> to add your content. Add folders to organize notebooks into sections if applicable</p></li>
+<li><p>Add the notebooks to <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code>. See <a class="reference external" href="https://github.com/ProjectPythiaTutorials/radar-cookbook/blob/main/_toc.yml"><code class="docutils literal notranslate"><span class="pre">radar-cookbook/_toc.yml</span></code></a> for syntax</p></li>
+<li><p>Change <code class="docutils literal notranslate"><span class="pre">README.md</span></code> to include your cookbook title, various badges, a sentence or two describing the cookbook, and a link to the landing page. See the <a class="reference external" href="https://github.com/ProjectPythiaTutorials/radar-cookbook/blob/main/README.md">Radar Cookbook</a> for an example</p></li>
+<li><p>Change <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> to include any pages from local site builds made during development. These will be in a <code class="docutils literal notranslate"><span class="pre">_build</span></code> directory (check if you moved the target directory from <code class="docutils literal notranslate"><span class="pre">notebooks/_build</span></code>).</p></li>
+<li><p>Commit your changes with git, and <a class="reference external" href="https://foundations.projectpythia.org/foundations/github/github-pull-request.html">open a Pull Request</a> on your cookbook repo. When you open a PR there, the github-actions bot will comment a link to a preview of your cookbook</p></li>
+</ol>
+</li>
+<li><p>Transfer cookbook to the <a class="reference external" href="https://github.com/ProjectPythiaCookbooks">ProjectPythiaCookbooks</a> organization</p>
+<ol class="simple">
+<li><p>Navigate to the settings of your repo, scroll down to the Danger Zone, and click “Transfer”</p>
+<ol class="simple">
+<li><p>For ProjectPythiaTutorials owners or members: type “ProjectPythiaTutorials”, confirm, and transfer.</p></li>
+<li><p>For outside contributors:</p>
+<ol class="simple">
+<li><p>Contact an owner of ProjectPythiaTutorials to be added as an outside collaborator. Then transfer to ProjectPythiaTutorials; or</p></li>
+<li><p>Type the username of an owner or member. They will then transfer it to ProjectPythiaCookbooks and add you as an outside collaborator on that repo</p></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>Open issues, PRs, and continue making edits as necessary</p></li>
+</ol>
+</li>
+</ol>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               <!-- Previous / next buttons -->
