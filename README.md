@@ -13,7 +13,9 @@ This Project Pythia Cookbook covers ... (replace `...` with the main subject of 
 
 ### Contributors
 
-[//]: contributor-faces
+<a href="https://github.com/ProjectPythiaCookbooks/cookbook-template/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ProjectPythiaCookbooks/cookbook-template" />
+</a>
 
 ## Motivation
 

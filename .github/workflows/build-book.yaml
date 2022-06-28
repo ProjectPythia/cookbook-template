@@ -58,12 +58,6 @@ jobs:
           || steps.cache.outputs.cache-hit != 'true'
         run: mamba env update -n ${{ inputs.environment_name }} -f ${{ inputs.environment_file }}
 
-      - name: Install contributor-faces
-        run: npm install --save contributor-faces
-
-      - name: Run contributor-faces
-        run: contributor-faces .  # should update the README file
-
       - name: Build the book
         run: |
           jupyter-book build ${{ inputs.path_to_notebooks }}
