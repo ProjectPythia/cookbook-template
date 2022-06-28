@@ -1,6 +1,6 @@
 # (Replace_with_your_title) Cookbook
 
-[![nightly-build](https://github.com/ProjectPythiaTutorials/cookbook-template/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythiaTutorials/cookbook-template/actions/workflows/nightly-build.yaml)
+[![nightly-build](https://github.com/ProjectPythiaCookbooks/cookbook-template/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythiaCookbooks/cookbook-template/actions/workflows/nightly-build.yaml)
 
 This Project Pythia Cookbook covers ... (replace `...` with the main subject of your cookbook ... e.g., *working with radar data in Python*)
 
@@ -42,10 +42,10 @@ If you are interested in running this material locally on your computer, you wil
 
 (Replace "cookbook-example" with the title of your cookbooks)   
 
-1. Clone the `https://github.com/ProjectPythiaTutorials/cookbook-example` repository:
+1. Clone the `https://github.com/ProjectPythiaCookbooks/cookbook-example` repository:
 
    ```bash
-    git clone https://github.com/ProjectPythiaTutorials/cookbook-example.git
+    git clone https://github.com/ProjectPythiaCookbooks/cookbook-example.git
     ```  
 1. Move into the `cookbook-example` directory
     ```bash
