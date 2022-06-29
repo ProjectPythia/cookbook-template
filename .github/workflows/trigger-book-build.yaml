@@ -4,14 +4,14 @@ on:
 
 jobs:
   build:
-    uses: ./.github/workflows/build-book.yaml
+    uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/build-book.yaml@main
     with:
       environment_name: cookbook-dev
       environment_file: environment.yml
       path_to_notebooks: ./
       use_cached_environment: 'true'  # This is default, not strickly needed. Set to 'false' to always build a new environment
   link-check:
-    uses: ./.github/workflows/link-checker.yaml
+    uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/link-checker.yaml@main
     with:
       environment_name: cookbook-dev
       environment_file: environment.yml

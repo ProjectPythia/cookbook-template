@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    uses: ./.github/workflows/build-book.yaml
+    uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/build-book.yaml@main
     with:
       environment_name: cookbook-dev
       environment_file: environment.yml
