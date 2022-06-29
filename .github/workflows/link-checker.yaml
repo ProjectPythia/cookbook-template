@@ -54,7 +54,7 @@ jobs:
         with:
           path: /usr/share/miniconda3/envs/${{ inputs.environment_name }}
           # This should create a key that looks like 'linux-64-conda-environment.yml-[HASH]-DATE'
-          key: ${{ format('linux-64-conda-{0}-{1}-{2}', inputs.environment_file, hashFiles(format('{0}')), env.DATE )}}
+          key: ${{ format('linux-64-conda-{0}-{1}-{2}', inputs.environment_file, hashFiles(format('{0}', inputs.environment_file)), env.DATE )}}
         id: cache
 
       - name: Update environment
