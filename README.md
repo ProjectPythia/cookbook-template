@@ -1,4 +1,4 @@
-<img src="thumbnail.svg" alt="thumbnail" width="300"/>
+<img src="thumbnail.png" alt="thumbnail" width="300"/>
 
 # (Replace_with_your_title) Cookbook
 
