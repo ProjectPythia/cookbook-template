@@ -7,6 +7,11 @@ logo: notebooks/images/logos/pythia_logo-white-rtext.svg
 email: projectpythia@ucar.edu
 copyright: '2022'
 
+thumbnail: thumbnail.png
+tags:
+  domains:
+  packages:
+
 # Execute the notebooks upon build
 execute:
   execute_notebooks: cache
