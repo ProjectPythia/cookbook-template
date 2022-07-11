@@ -7,6 +7,7 @@ on:
 
 jobs:
   build:
+    if: ${{ github.repository_owner == 'ProjectPythiaCookbooks' }}
     uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/build-book.yaml@main
     with:
       environment_name: cookbook-dev
@@ -14,6 +15,7 @@ jobs:
       path_to_notebooks: ./
 
   link-check:
+    if: ${{ github.repository_owner == 'ProjectPythiaCookbooks' }}
     uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/link-checker.yaml@main
     with:
       environment_name: cookbook-dev
