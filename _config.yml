@@ -45,6 +45,7 @@ sphinx:
       use_issues_button: true
       use_repository_button: true
       use_edit_page_button: true
+      google_analytics_id: G-T52X8HNYE8
       github_url: https://github.com/ProjectPythiaCookbooks
       twitter_url: https://twitter.com/project_pythia
       icon_links:
