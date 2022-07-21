@@ -10,8 +10,8 @@ copyright: '2022'
 description: A sample cookbook description.
 thumbnail: thumbnail.png
 tags:
-  domains:
-  packages:
+  domains: sample-domain
+  packages: sample-package
 
 # Execute the notebooks upon build
 execute:
