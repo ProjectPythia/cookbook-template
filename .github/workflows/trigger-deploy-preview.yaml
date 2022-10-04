@@ -1,0 +1,12 @@
+name: trigger-deploy-preview
+on:
+  workflow_run:
+    workflows:
+      - trigger-book-build
+    types:
+      - requested
+      - completed
+
+jobs:
+  deploy:
+    uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/deploy-preview.yaml@main
