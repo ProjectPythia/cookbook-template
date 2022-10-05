@@ -1,0 +1,21 @@
+name: publish-book
+
+on:
+  # Trigger the workflow on push to main branch
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/build-book.yaml@main
+    with:
+      environment_name: cookbook-dev
+      environment_file: environment.yml
+      path_to_notebooks: ./
+
+  deploy:
+    needs: build
+    uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/deploy-book.yaml@main
+  
