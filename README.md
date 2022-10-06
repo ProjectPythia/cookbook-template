@@ -2,6 +2,8 @@
 
 # (Replace_with_your_title) Cookbook
 
+**THIS TEXT SHOULDN'T BE HERE, again**
+
 [![nightly-build](https://github.com/ProjectPythiaCookbooks/cookbook-template/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythiaCookbooks/cookbook-template/actions/workflows/nightly-build.yaml)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ProjectPythiaCookbooks/cookbook-template/main?labpath=notebooks)
 
