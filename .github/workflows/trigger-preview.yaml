@@ -1,4 +1,4 @@
-name: trigger-deploy-preview
+name: trigger-preview
 on:
   workflow_run:
     workflows:
