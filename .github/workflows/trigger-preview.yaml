@@ -1,0 +1,20 @@
+name: trigger-deploy-preview
+on:
+  workflow_run:
+    workflows:
+      - trigger-book-build
+    types:
+      - requested
+      - completed
+
+jobs:
+  deploy-prevew:
+    if: github.event.workflow_run.conclusion == 'success'
+    uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/deploy-book.yaml@main
+    with:
+      destination_dir: _preview/${{github.event.number}}  # deploy to subdirectory labeled with PR number
+  
+  preview-comment:
+    # uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/preview-comment.yaml@main
+    uses: brian-rose/cookbook-actions/.github/workflows/preview-comment.yaml@preview0comment
+  
