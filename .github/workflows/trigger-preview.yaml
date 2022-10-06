@@ -12,6 +12,7 @@ jobs:
     if: github.event.workflow_run.conclusion == 'success'
     uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/deploy-book.yaml@main
     with:
+      artifact_name: book-zip-${{ github.event.number }}
       destination_dir: _preview/${{github.event.number}}  # deploy to subdirectory labeled with PR number
   
   preview-comment:
