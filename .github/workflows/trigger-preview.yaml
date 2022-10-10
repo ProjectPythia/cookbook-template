@@ -16,7 +16,7 @@ jobs:
       #  and reports them as job outputs
       #  Then any subsequent job marked with needs: find-pull-request can access this info like ${{needs.find-pull-request.outputs.pull-request-number}} etc.
       # Here we should just call out to a reusable workflow that does this
-  deploy-prevew:
+  deploy-preview:
     needs: find-pull-request
     if: github.event.workflow_run.conclusion == 'success'
     # uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/deploy-book.yaml@main
