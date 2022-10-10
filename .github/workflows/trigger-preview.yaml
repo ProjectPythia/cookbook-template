@@ -4,7 +4,7 @@ on:
     workflows:
       - trigger-book-build
     types:
-      - requested
+      # - requested  # temporary... no comments until build and deploy are done
       - completed
 
 jobs:
@@ -26,7 +26,7 @@ jobs:
       destination_dir: _preview/${{ needs.find-pull-request.outputs.number }}  # deploy to subdirectory labeled with PR number
   
   preview-comment:
-    needs: find-pull-request
+    needs: [find-pull-request, deploy-preview] # temporary for testing... no comments until deploy is done
     # uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/preview-comment.yaml@main
     uses: brian-rose/cookbook-actions/.github/workflows/preview-comment.yaml@find-pr
     with:
