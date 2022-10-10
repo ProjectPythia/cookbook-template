@@ -9,8 +9,7 @@ on:
 
 jobs:
   build:
-    # uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/build-book.yaml@main
-    uses: brian-rose/cookbook-actions/.github/workflows/build-book.yaml@find-pr
+    uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/build-book.yaml@main
     with:
       environment_name: cookbook-dev
       environment_file: environment.yml
@@ -19,8 +18,7 @@ jobs:
 
   deploy:
     needs: build
-    # uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/deploy-book.yaml@main
-    uses: brian-rose/cookbook-actions/.github/workflows/deploy-book.yaml@find-pr
+    uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/deploy-book.yaml@main
     with:
       artifact_name: book-zip
   
