@@ -14,11 +14,8 @@ jobs:
       environment_name: cookbook-dev
       environment_file: environment.yml
       path_to_notebooks: ./
-      artifact_name: book-zip
 
   deploy:
     needs: build
     uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/deploy-book.yaml@main
-    with:
-      artifact_name: book-zip
   
