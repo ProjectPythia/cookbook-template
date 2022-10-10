@@ -11,11 +11,6 @@ jobs:
   find-pull-request:
     # uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/find-pull-request.yaml@main
     uses: brian-rose/cookbook-actions/.github/workflows/find-pull-request.yaml@find-pr
-      #  https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idoutputs
-      #  the idea here is that we should make a reusable workflow that just retrieves the PR number and SHA
-      #  and reports them as job outputs
-      #  Then any subsequent job marked with needs: find-pull-request can access this info like ${{needs.find-pull-request.outputs.pull-request-number}} etc.
-      # Here we should just call out to a reusable workflow that does this
   deploy-preview:
     needs: find-pull-request
     if: github.event.workflow_run.conclusion == 'success'
