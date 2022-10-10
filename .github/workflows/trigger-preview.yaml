@@ -20,36 +20,10 @@ jobs:
     needs: find-pull-request
     if: github.event.workflow_run.conclusion == 'success'
     # uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/deploy-book.yaml@main
-    # uses: brian-rose/cookbook-actions/.github/workflows/deploy-book.yaml@find-pr
-    # with:
-    #   artifact_name: book-zip-${{ needs.find-pull-request.outputs.number }}
-    #   destination_dir: _preview/${{ needs.find-pull-request.outputs.number }}  # deploy to subdirectory labeled with PR number
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash -l {0}
-    steps: 
-      - name: Download Artifact Book
-        uses: actions/download-artifact@v3
-        with:
-          name: book-zip-${{ needs.find-pull-request.outputs.number }}
-
-      - name: Unzip the book
-        run: |
-          rm -rf _build/html
-          unzip book.zip
-          rm -f book.zip
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3.8.0
-        if: github.ref == 'refs/heads/main'
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: _build/html
-          enable_jekyll: false
-          keep_files: true  # This preserves existing previews from open PRs
-          destination_dir: _preview/${{ needs.find-pull-request.outputs.number }}
-
+    uses: brian-rose/cookbook-actions/.github/workflows/deploy-book.yaml@find-pr
+    with:
+      artifact_name: book-zip-${{ needs.find-pull-request.outputs.number }}
+      destination_dir: _preview/${{ needs.find-pull-request.outputs.number }}  # deploy to subdirectory labeled with PR number
   
   preview-comment:
     needs: [find-pull-request, deploy-preview] # temporary for testing... no comments until deploy is done
