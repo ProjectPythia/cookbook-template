@@ -8,3 +8,4 @@ dependencies:
   - pip:
       - sphinx-pythia-theme
       - git+https://github.com/pangeo-gallery/binderbot.git
+
