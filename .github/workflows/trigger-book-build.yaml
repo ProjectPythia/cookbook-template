@@ -14,3 +14,4 @@ jobs:
       artifact_name: book-zip-${{ github.event.number }}
       binder_notebooks_to_build: 'notebooks/*.ipynb'
       
+      
