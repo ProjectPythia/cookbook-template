@@ -6,4 +6,7 @@ jobs:
   link-check:
     # uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/link-checker.yaml@main
     uses: brian-rose/cookbook-actions/.github/workflows/link-checker.yaml@binderbot
+    with:
+      environment_name: cookbook-dev
+      environment_file: environment.yml
   
