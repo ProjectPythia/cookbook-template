@@ -3,3 +3,9 @@ channels:
   - conda-forge
 dependencies:
   - jupyterlab
+  - jupyter-book
+  - pip
+  - pip:
+      - sphinx-pythia-theme
+      - git+https://github.com/pangeo-gallery/binderbot.git
+

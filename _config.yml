@@ -15,9 +15,11 @@ tags:
   packages: 
     - samplepackage
 
-# Don't execute the notebooks upon build (we do that via binderbot)
+# Execute the notebooks upon build (do not use binderbot!)
 execute:
-  execute_notebooks: 'off'
+  execute_notebooks: cache
+  timeout: 600
+  allow_errors: True
 
 # Add a few extensions to help with parsing content
 parse:

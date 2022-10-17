@@ -8,4 +8,7 @@ jobs:
     uses: brian-rose/cookbook-actions/.github/workflows/build-book.yaml@binderbot
     with:
       artifact_name: book-zip-${{ github.event.number }}
+      environment_name: cookbook-dev
+      environment_file: environment.yml
+      use_binder: 'false'
 

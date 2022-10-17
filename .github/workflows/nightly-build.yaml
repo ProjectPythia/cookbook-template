@@ -10,6 +10,10 @@ jobs:
     if: ${{ github.repository_owner == 'ProjectPythiaCookbooks' }}
     # uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/build-book.yaml@main
     uses: brian-rose/cookbook-actions/.github/workflows/build-book.yaml@binderbot
+    with:
+      environment_name: cookbook-dev
+      environment_file: environment.yml
+      use_binder: 'false'
 
   link-check:
     if: ${{ github.repository_owner == 'ProjectPythiaCookbooks' }}
