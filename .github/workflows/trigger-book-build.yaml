@@ -12,6 +12,5 @@ jobs:
       path_to_notebooks: ./
       use_cached_environment: 'true'  # This is default, not strickly needed. Set to 'false' to always build a new environment
       artifact_name: book-zip-${{ github.event.number }}
-      binder_build_env_repo: ProjectPythiaCookbooks/cookbook-template
       binder_notebooks_to_build: 'notebooks/*.ipynb'
       
