@@ -11,4 +11,3 @@ jobs:
       environment_name: cookbook-dev
       environment_file: environment.yml
       use_binder: 'false'
-
