@@ -5,7 +5,7 @@ on:
 jobs:
   build:
     # uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/build-book.yaml@main
-    uses: brian-rose/cookbook-actions/.github/workflows/build-book.yaml@binderbot
+    uses: brian-rose/cookbook-actions/.github/workflows/build-book.yaml@binderbot-switch
     with:
       artifact_name: book-zip-${{ github.event.number }}
 
