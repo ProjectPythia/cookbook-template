@@ -6,9 +6,4 @@ jobs:
   link-check:
     # uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/link-checker.yaml@main
     uses: brian-rose/cookbook-actions/.github/workflows/link-checker.yaml@minimal-linkcheck-env
-    with:
-      environment_name: cookbook-dev
-      environment_file: environment.yml
-      path_to_notebooks: ./
-      use_cached_environment: 'true'
-      
+    
