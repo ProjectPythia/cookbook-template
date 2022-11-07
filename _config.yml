@@ -15,8 +15,8 @@ tags:
   packages: 
     - samplepackage
 
-# Execute the notebooks upon build
 execute:
+  # To execute notebooks via a binder instead, replace 'cache' with 'binder'
   execute_notebooks: cache
   timeout: 600
   allow_errors: True
