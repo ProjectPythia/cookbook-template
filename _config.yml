@@ -15,8 +15,8 @@ tags:
   packages: 
     - samplepackage
 
-# Execute the notebooks via binder
 execute:
+  # To execute notebooks via a binder instead, replace 'cache' with 'binder'
   execute_notebooks: binder
 
 # Add a few extensions to help with parsing content
