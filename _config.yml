@@ -18,7 +18,6 @@ tags:
 # Don't execute the notebooks upon build (we do that via binderbot)
 execute:
   execute_notebooks: binder
-  # execute_notebooks: cache
 
 # Add a few extensions to help with parsing content
 parse:
