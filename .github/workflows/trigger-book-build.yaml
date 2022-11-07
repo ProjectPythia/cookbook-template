@@ -9,7 +9,7 @@ jobs:
     with:
       environment_name: cookbook-dev
       environment_file: environment.yml
-      path_to_source: ./
+      path_to_notebooks: ./
       use_cached_environment: 'true'  # This is default, not strickly needed. Set to 'false' to always build a new environment
       artifact_name: book-zip-${{ github.event.number }}
       
