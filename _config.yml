@@ -36,7 +36,7 @@ parse:
 
 sphinx:
   config:
-    html_favicon: images/icons/favicon.ico
+    html_favicon: notebooks/images/icons/favicon.ico
     html_last_updated_fmt: '%-d %B %Y'
     html_theme: sphinx_pythia_theme
     html_permalinks_icon: '<i class="fas fa-link"></i>'
