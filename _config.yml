@@ -36,13 +36,8 @@ parse:
 
 sphinx:
   config:
-<<<<<<< HEAD
-    linkcheck_ignore: [r"*doi.org*"]
-    html_favicon: notebooks/images/icons/favicon.ico
-=======
     linkcheck_ignore: ["https://doi.org/*",]
-    html_favicon: images/icons/favicon.ico
->>>>>>> ea2f696 (Fix regular expression)
+    html_favicon: notebooks/images/icons/favicon.ico
     html_last_updated_fmt: '%-d %B %Y'
     html_theme: sphinx_pythia_theme
     html_permalinks_icon: '<i class="fas fa-link"></i>'
