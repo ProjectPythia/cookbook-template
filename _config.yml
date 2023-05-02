@@ -36,6 +36,7 @@ parse:
 
 sphinx:
   config:
+    linkcheck_ignore: [r"*doi.org*"]
     html_favicon: images/icons/favicon.ico
     html_last_updated_fmt: '%-d %B %Y'
     html_theme: sphinx_pythia_theme
