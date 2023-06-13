@@ -37,6 +37,7 @@ parse:
 sphinx:
   config:
     linkcheck_ignore: ["https://doi.org/*",]
+    nb_execution_raise_on_error: true  # raise exception in build if there are notebook errors
     html_favicon: notebooks/images/icons/favicon.ico
     html_last_updated_fmt: '%-d %B %Y'
     html_theme: sphinx_pythia_theme
