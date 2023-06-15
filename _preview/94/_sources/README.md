@@ -2,10 +2,10 @@
 
 # (Replace_with_your_title) Cookbook
 
-[![nightly-build](https://github.com/ProjectPythiaCookbooks/cookbook-template/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythiaCookbooks/cookbook-template/actions/workflows/nightly-build.yaml)
-[![Binder](http://binder.mypythia.org/badge_logo.svg)](http://binder.mypythia.org/v2/gh/ProjectPythiaCookbooks/cookbook-template/main?labpath=notebooks)
+[![nightly-build](https://github.com/ProjectPythia/cookbook-template/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythia/cookbook-template/actions/workflows/nightly-build.yaml)
+[![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/ProjectPythia/cookbook-template/main?labpath=notebooks)
 
-This Project Pythia Cookbook covers ... (replace `...` with the main subject of your cookbook ... e.g., *working with radar data in Python*)
+This Project Pythia Cookbook covers ... (replace `...` with the main subject of your cookbook ... e.g., _working with radar data in Python_)
 
 ## Motivation
 
@@ -13,24 +13,28 @@ This Project Pythia Cookbook covers ... (replace `...` with the main subject of 
 
 ## Authors
 
-[First Author](@first-author), [Second Author](@second-author), etc. *Acknowledge primary content authors here*
+[First Author](@first-author), [Second Author](@second-author), etc. _Acknowledge primary content authors here_
 
 ### Contributors
 
-<a href="https://github.com/ProjectPythiaCookbooks/cookbook-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ProjectPythiaCookbooks/cookbook-template" />
+<a href="https://github.com/ProjectPythia/cookbook-template/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ProjectPythia/cookbook-template" />
 </a>
 
 ## Structure
-(State one or more sections that will comprise the notebook. E.g., *This cookbook is broken up into two main sections - "Foundations" and "Example Workflows."* Then, describe each section below.)
+
+(State one or more sections that will comprise the notebook. E.g., _This cookbook is broken up into two main sections - "Foundations" and "Example Workflows."_ Then, describe each section below.)
 
 ### Section 1 ( Replace with the title of this section, e.g. "Foundations" )
+
 (Add content for this section, e.g., "The foundational content includes ... ")
 
 ### Section 2 ( Replace with the title of this section, e.g. "Example workflows" )
+
 (Add content for this section, e.g., "Example workflows include ... ")
 
 ## Running the Notebooks
+
 You can either run the notebook using [Binder](https://mybinder.org/) or on your local machine.
 
 ### Running on Binder
@@ -51,26 +55,28 @@ a live Jupyter notebook are described in [Getting Started with
 Jupyter](https://foundations.projectpythia.org/foundations/getting-started-jupyter.html).
 
 ### Running on Your Own Machine
+
 If you are interested in running this material locally on your computer, you will need to follow this workflow:
 
-(Replace "cookbook-example" with the title of your cookbooks)   
+(Replace "cookbook-example" with the title of your cookbooks)
 
-1. Clone the `https://github.com/ProjectPythiaCookbooks/cookbook-example` repository:
+1. Clone the `https://github.com/ProjectPythia/cookbook-example` repository:
 
    ```bash
-    git clone https://github.com/ProjectPythiaCookbooks/cookbook-example.git
-    ```  
+    git clone https://github.com/ProjectPythia/cookbook-example.git
+   ```
+
 1. Move into the `cookbook-example` directory
-    ```bash
-    cd cookbook-example
-    ```  
+   ```bash
+   cd cookbook-example
+   ```
 1. Create and activate your conda environment from the `environment.yml` file
-    ```bash
-    conda env create -f environment.yml
-    conda activate cookbook-example
-    ```  
-1.  Move into the `notebooks` directory and start up Jupyterlab
-    ```bash
-    cd notebooks/
-    jupyter lab
-    ```
+   ```bash
+   conda env create -f environment.yml
+   conda activate cookbook-example
+   ```
+1. Move into the `notebooks` directory and start up Jupyterlab
+   ```bash
+   cd notebooks/
+   jupyter lab
+   ```
