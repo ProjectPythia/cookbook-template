@@ -44,5 +44,5 @@ authors:
     affiliation: NVIDIA
   - name: "Cookbook Template contributors" # use the 'name' field to acknowledge organizations
     website: "https://github.com/ProjectPythia/cookbook-template/graphs/contributors"
-title: "HRRR AWS Cookbook"
+title: "Cookbook Template"
 abstract: "A sample cookbook description."
