@@ -4,16 +4,7 @@
 title: Project Pythia Cookbook Template
 author: the <a href="https://projectpythia.org/">Project Pythia</a> Community
 logo: notebooks/images/logos/pythia_logo-white-rtext.svg
-email: projectpythia@ucar.edu
 copyright: "2023"
-
-description: A sample cookbook description.
-thumbnail: thumbnail.png
-tags:
-  domains:
-    - sampledomain
-  packages:
-    - samplepackage
 
 execute:
   # To execute notebooks via a Binder instead, replace 'cache' with 'binder'
