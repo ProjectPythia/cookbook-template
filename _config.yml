@@ -4,20 +4,12 @@
 title: Project Pythia Cookbook Template
 author: the <a href="https://projectpythia.org/">Project Pythia</a> Community
 logo: notebooks/images/logos/pythia_logo-white-rtext.svg
-email: projectpythia@ucar.edu
-copyright: "2022"
-
-description: A sample cookbook description.
-thumbnail: thumbnail.png
-tags:
-  domains:
-    - sampledomain
-  packages:
-    - samplepackage
+copyright: "2023"
 
 execute:
-  # To execute notebooks via a binder instead, replace 'cache' with 'binder'
+  # To execute notebooks via a Binder instead, replace 'cache' with 'binder'
   execute_notebooks: binder
+  timeout: 600
   allow_errors: False # cells with expected failures must set the `raises-exception` cell tag
 
 # Add a few extensions to help with parsing content
@@ -35,10 +27,10 @@ parse:
 
 sphinx:
   config:
-    linkcheck_ignore: ["https://doi.org/*",]
-    nb_execution_raise_on_error: true  # raise exception in build if there are notebook errors
+    linkcheck_ignore: ["https://doi.org/*"] # don't run link checker on DOI links since they are immutable
+    nb_execution_raise_on_error: true # raise exception in build if there are notebook errors (this flag is ignored if building on binder)
     html_favicon: notebooks/images/icons/favicon.ico
-    html_last_updated_fmt: '%-d %B %Y'
+    html_last_updated_fmt: "%-d %B %Y"
     html_theme: sphinx_pythia_theme
     html_permalinks_icon: '<i class="fas fa-link"></i>'
     html_theme_options:
