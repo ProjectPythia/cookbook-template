@@ -17,7 +17,7 @@ jobs:
           find: "ProjectPythia/cookbook-template"
           replace: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
           regex: false
-          exclude: ".github/workflows/trigger-replace-links.yml"
+          exclude: ".github/workflows/trigger-replace-links.yaml"
 
       - name: Find and Replace Repository ID
         uses: jacobtomlinson/gha-find-replace@v3
