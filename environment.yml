@@ -6,6 +6,20 @@ dependencies:
   - jupyter-book
   - jupyterlab
   - jupyter_server
+  - zarr
+  - xarray
+  - geoviews
+  - datashader
+  - matplotlib
+  - panel
+  - pandas
+  - requests
+  - pathlib
+  - metpy
+  - scipy
+  - geopandas
+  - gcsfs
+  - cf_xarray
   - pip
   - pip:
       - sphinx-pythia-theme
