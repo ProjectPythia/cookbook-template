@@ -25,7 +25,7 @@ jobs:
           find: "475509405"
           replace: "${{ github.repository_id}}"
           regex: false
-          exclude: ".github/workflows/trigger-replace-links.yml"
+          exclude: ".github/workflows/trigger-replace-links.yaml"
 
       - name: Push changes
         uses: stefanzweifel/git-auto-commit-action@v5
