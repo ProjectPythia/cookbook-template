@@ -138,3 +138,5 @@ dmypy.json
 # Data files
 *.nc
 *.bz2
+notebooks/Downloaded_data/.DS_Store
+notebooks/Downloaded_data/ABI-L1b-RadF/.DS_Store
