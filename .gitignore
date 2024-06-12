@@ -134,3 +134,7 @@ dmypy.json
 
 # Ephemeral .nfs files
 .nfs*
+
+# Data files
+*.nc
+*.bz2
