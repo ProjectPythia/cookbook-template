@@ -1,4 +1,4 @@
-<img src="/notebooks/images/logos/ncar_pythia.png" alt="pythia ncar" />
+<img src="notebooks\images\logos\ncar_pythia.png" alt="pythia ncar" />
 
 # Geostationary satellite Cookbook
 
@@ -16,7 +16,7 @@ of the three geostationary satellites that can be accessed freely from AWS bucke
 
 ## Authors
 
-[jhbravo](@jhbravo), [Second Author](@second-author), etc. _Acknowledge primary content authors here_
+[jhbravo](jhbravo), [Second Author](@second-author), etc. _Acknowledge primary content authors here_
 
 ### Contributors
 
