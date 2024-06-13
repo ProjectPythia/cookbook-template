@@ -140,3 +140,5 @@ dmypy.json
 *.bz2
 notebooks/Downloaded_data/.DS_Store
 notebooks/Downloaded_data/ABI-L1b-RadF/.DS_Store
+notebooks/.DS_Store
+notebooks/Downloaded_data/ABI-L1b-RadC/.DS_Store
