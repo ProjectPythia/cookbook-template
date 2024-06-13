@@ -55,7 +55,16 @@ These sensors have several similarities in their spectral band configurations:
 
 ### Example workflows
 
-some to write
+Several notebooks with the following structure can be found in the notebooks directory:
+
+00_geosat_explaining_steps.ipynb: provides a detailed explanation on how to download data and use Satpy to display it.
+
+Given that you have read the 00_geosat_explaining_steps.ipynb and have a basic understanding of how to use Satpy, the following notebooks are designed without providing an explanation of the various sensors on each satellite.
+- 99_auxiliar_dowloading.ipynb: In order to run the subsequent notebooks, data must be downloaded from this notebook. 
+- 01_geosat_ABI_GOES_east.ipynb: notebook to read ABI sensor data locally on GOES-east
+- 02_geosat_ABI_GOES_west.ipynb: notebook to read ABI sensor data locally on GOES-west
+- 03_geosat_AHI_HIMAWARI.ipynb: notebook to read AHI sensor data locally on HIMAWARI
+- 04_geosat_AMI_GK2A.ipynb: notebook for reading AMI sensor data locally on GeoKomposat
 
 ## Running the Notebooks
 
