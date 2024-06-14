@@ -15,7 +15,7 @@ This **"Pythia Cookbook"** was started during the **Project Pythia June 11-14 20
 
 <p>
 <img align="left" src="https://registry.opendata.aws/img/logos/noaa-logo.png" width="100" height="100" >   
-Public access to NOAA's geostationary satellite data, including GOES-16, GOES-17, and GOES-18, is made possible through the NOAA Open Data Dissemination <a href="https://www.noaa.gov/information-technology/open-data-dissemination">NODD</a> Program on commercial cloud platforms like Microsoft Azure, Amazon Web Services, and Google Cloud Platform. Amazon Web Services also hosts data from two other geostationary satellites HIMAWARI and Geo-KOMPSAT-2A. NODD's partnerships with top cloud providers enable near real-time access to to all these satellites.</p>  
+Public access to NOAA's geostationary satellite data, including GOES-16, GOES-17, and GOES-18, is made possible through the NOAA Open Data Dissemination <a href="https://www.noaa.gov/information-technology/open-data-dissemination">NODD</a> Program on commercial cloud platforms like Microsoft Azure, Amazon Web Services, and Google Cloud Platform. Amazon Web Services also hosts data from two other geostationary satellites HIMAWARI and Geo-KOMPSAT-2A. NODD's partnerships with top cloud providers enable near real-time access to to all these satellites, as well as long archives.</p>  
 <p>
 Global weather, climate, and environmental phenomena monitoring is greatly aided by geostationary satellites such as GOES-R, HIMAWARI, and GK2A. The need for thorough tools and resources to efficiently analyze and interpret satellite data is growing as the use of such data for scientific research, weather forecasting, and environmental monitoring grows. 
 </p>  
