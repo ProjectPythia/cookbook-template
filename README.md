@@ -57,7 +57,7 @@ These sensors have several similarities in their spectral band configurations:
 
 Several notebooks with the following structure can be found in the notebooks directory:
 
-[00_geosat_explaining_steps.ipynb](notebooks/00_geosat_explaining_steps.ipynb):: provides a detailed explanation on how to download data and use Satpy to display it.
+- [00_geosat_explaining_steps.ipynb](notebooks/00_geosat_explaining_steps.ipynb):: provides a detailed explanation on how to download data and use Satpy to display it.
 
 Given that you have read the 00_geosat_explaining_steps.ipynb and have a basic understanding of how to use Satpy, the following notebooks are designed without providing an explanation of the various sensors on each satellite.
 - [99_auxiliar_dowloading.ipynb](notebooks/99_auxiliar_dowloading.ipynb): In order to run the subsequent notebooks, data must be downloaded from this notebook. 
