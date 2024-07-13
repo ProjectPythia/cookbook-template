@@ -16,6 +16,6 @@ project:
         - file: notebooks/how-to-cite.md
     - title: Introduction
       children:
-        - file: notebooks/notebook-template.ipynb
+        - file: notebooks/notebook-template.md
 site:
   template: book-theme
