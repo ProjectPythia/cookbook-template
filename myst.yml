@@ -1,14 +1,16 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
+extends:
+  - https://raw.githubusercontent.com/projectpythia-mystmd/pythia-config/main/pythia.yml
 project:
-  title: Project Pythia Cookbook Template Jupter Book 2
-  description:
-  thumbnail: thumbnail.png
+  title: Project Pythia Cookbook Template - Jupter Book 2
+  github: https://github.com/projectpythia-mystmd/cookbook-template
+  thumbnail: thumbnails/thumbnail.png
   tags: ["sampletag"]
   keywords: ["samplekeyword"]
   authors:
-    - name: the Project Pythia Community
-  github: https://github.com/projectpythia-mystmd/cookbook-template
+    - name: The Project Pythia Community
+  copyright: '2024'
   toc:
     - file: README.md
     - title: Preamble
@@ -17,5 +19,6 @@ project:
     - title: Introduction
       children:
         - file: notebooks/notebook-template.md
-site:
-  template: book-theme
+  jupyter:
+      binder:
+        repo: projectpythia-mystmd/cookbook-template
