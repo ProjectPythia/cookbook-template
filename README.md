@@ -55,6 +55,10 @@ have no output at first, until you execute them by pressing
 a live Jupyter notebook are described in [Getting Started with
 Jupyter](https://foundations.projectpythia.org/foundations/getting-started-jupyter.html).
 
+Note, not all Cookbook chapters are executable. If you do not see
+the rocket ship icon, such as on this page, you are not viewing an
+executable book chapter.
+
 ### Running on Your Own Machine
 
 If you are interested in running this material locally on your computer, you will need to follow this workflow:
