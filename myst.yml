@@ -22,3 +22,5 @@ project:
   jupyter:
       binder:
         repo: projectpythia-mystmd/cookbook-template
+site:
+  template: book-theme
