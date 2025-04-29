@@ -18,7 +18,7 @@ project:
         - file: notebooks/how-to-cite.md
     - title: Introduction
       children:
-        - file: notebooks/notebook-template.md
+        - file: notebooks/notebook-template.ipynb
   jupyter:
       binder:
         repo: projectpythia-mystmd/cookbook-template
