@@ -4,7 +4,7 @@ on:
 
 jobs:
   build:
-    uses: brian-rose/cookbook-actions/.github/workflows/build-book.yaml@myst
+    uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
     with:
       environment_name: cookbook-dev
       artifact_name: book-zip-${{ github.event.number }}
