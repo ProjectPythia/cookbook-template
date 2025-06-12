@@ -18,6 +18,7 @@ jobs:
   find-pull-request:
     uses: ProjectPythia/cookbook-actions/.github/workflows/find-pull-request.yaml@main
   deploy:
+    needs: find-pull-request
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
