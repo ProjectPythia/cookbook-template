@@ -11,7 +11,7 @@ env:
   BASE_URL: /${{ github.event.repository.name }}
 
 jobs:
-    build-deploy:
+    build:
         runs-on: ubuntu-latest
         defaults:
             run:
@@ -27,6 +27,37 @@ jobs:
                 environment-file: environment.yml
             - name: Build the book
               run: myst build --execute --html
+            - name: Zip the book
+              run: |
+                set -x
+                set -e
+                if [ -f book.zip ]; then
+                    rm -rf book.zip
+                fi
+                zip -r book.zip _build/html
+      
+            - name: Upload zipped book artifact
+              uses: actions/upload-artifact@v4
+              with:
+                name: book-zip
+                path: ./book.zip
+    
+    deploy:
+        needs: build
+        runs-on: ubuntu-latest
+        defaults:
+            run:
+                shell: bash -leo pipefail {0}
+        steps:
+            - name: Download html artifact
+              uses: actions/download-artifact@v4
+              with:
+                name: book-zip
+            - name: Unzip the book
+              run: |
+                  rm -rf _build/html
+                  unzip book.zip
+                  rm -f book.zip
             - name: Deploy to gh-pages branch
               uses: JamesIves/github-pages-deploy-action@v4
               with:
