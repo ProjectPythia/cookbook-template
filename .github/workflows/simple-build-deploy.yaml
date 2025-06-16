@@ -44,7 +44,7 @@ jobs:
     
     deploy:
         needs: build
-        uses: ProjectPythia/cookbook-actions/.github/workflows/deploy-book.yaml@main
+        uses: brian-rose/cookbook-actions/.github/workflows/deploy-book.yaml@myst
         # runs-on: ubuntu-latest
         # defaults:
         #     run:
