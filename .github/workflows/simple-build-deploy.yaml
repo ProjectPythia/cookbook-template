@@ -12,11 +12,11 @@ on:
 
 jobs:
     build:
-      uses: ./.github/workflows/build-book.yaml
-      # uses: brian-rose/cookbook-actions/.github/workflows/build-book.yaml@myst
-      # with:
-      #   environment_name: cookbook-dev
-      #   build_command: 'myst build --execute --html'
+      # uses: ./.github/workflows/build-book.yaml
+      uses: brian-rose/cookbook-actions/.github/workflows/build-book.yaml@myst
+      with:
+        environment_name: cookbook-dev
+        build_command: 'myst build --execute --html'
         # runs-on: ubuntu-latest
         # defaults:
         #     run:
