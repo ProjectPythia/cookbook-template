@@ -1,0 +1,36 @@
+name: simple-build-deploy
+
+on:
+    push:
+        branches:
+            - main
+    workflow_dispatch:
+env:
+  # `BASE_URL` determines the website is served from, including CSS & JS assets
+  # You may need to change this to `BASE_URL: ''`
+  BASE_URL: /${{ github.event.repository.name }}
+
+jobs:
+    build-deploy:
+        runs-on: ubuntu-latest
+        defaults:
+            run:
+                shell: bash -leo pipefail {0}
+        steps:
+            - uses: actions/checkout@v4
+            - uses: actions/setup-node@v4
+              with:
+                node-version: 18.x
+            - name: Setup environment with micromamba
+              uses: mamba-org/setup-micromamba@v2
+              with:
+                environment-file: environment.yml
+            - name: Build the book
+              run: myst build --execute --html
+            - name: Deploy to gh-pages branch
+              uses: JamesIves/github-pages-deploy-action@v4
+              with:
+                token: ${{ secrets.GITHUB_TOKEN }}
+                branch: gh-pages
+                folder: '_build/html'
+                clean: true
