@@ -12,58 +12,40 @@ env:
 
 jobs:
     build:
-        runs-on: ubuntu-latest
-        defaults:
-            run:
-                shell: bash -leo pipefail {0}
-        steps:
-            - uses: actions/checkout@v4
-            - uses: actions/setup-node@v4
-              with:
-                node-version: 18.x
-            - name: Setup environment with micromamba
-              uses: mamba-org/setup-micromamba@v2
-              with:
-                environment-file: environment.yml
-            - name: Build the book
-              run: myst build --execute --html
-            - name: Zip the book
-              run: |
-                set -x
-                set -e
-                if [ -f book.zip ]; then
-                    rm -rf book.zip
-                fi
-                zip -r book.zip _build/html
-      
-            - name: Upload zipped book artifact
-              uses: actions/upload-artifact@v4
-              with:
-                name: book-zip
-                path: ./book.zip
-    
-    deploy:
-        needs: build
-        uses: ProjectPythia/cookbook-actions/.github/workflows/deploy-book.yaml@main
+      uses: brian-rose/cookbook-actions/.github/workflows/build-book.yaml@myst
+      with:
+        environment_name: cookbook-dev
+        build_command: 'myst build --execute --html'
         # runs-on: ubuntu-latest
         # defaults:
         #     run:
         #         shell: bash -leo pipefail {0}
         # steps:
         #     - uses: actions/checkout@v4
-        #     - name: Download html artifact
-        #       uses: actions/download-artifact@v4
+        #     - uses: actions/setup-node@v4
+        #       with:
+        #         node-version: 18.x
+        #     - name: Setup environment with micromamba
+        #       uses: mamba-org/setup-micromamba@v2
+        #       with:
+        #         environment-file: environment.yml
+        #     - name: Build the book
+        #       run: myst build --execute --html
+        #     - name: Zip the book
+        #       run: |
+        #         set -x
+        #         set -e
+        #         if [ -f book.zip ]; then
+        #             rm -rf book.zip
+        #         fi
+        #         zip -r book.zip _build/html
+      
+        #     - name: Upload zipped book artifact
+        #       uses: actions/upload-artifact@v4
         #       with:
         #         name: book-zip
-        #     - name: Unzip the book
-        #       run: |
-        #           rm -rf _build/html
-        #           unzip book.zip
-        #           rm -f book.zip
-        #     - name: Deploy to gh-pages branch
-        #       uses: JamesIves/github-pages-deploy-action@v4
-        #       with:
-        #         token: ${{ secrets.GITHUB_TOKEN }}
-        #         branch: gh-pages
-        #         folder: '_build/html'
-        #         clean: true
+        #         path: ./book.zip
+    
+    deploy:
+        needs: build
+        uses: ProjectPythia/cookbook-actions/.github/workflows/deploy-book.yaml@main
