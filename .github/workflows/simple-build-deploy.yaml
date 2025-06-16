@@ -49,6 +49,7 @@ jobs:
             run:
                 shell: bash -leo pipefail {0}
         steps:
+            - uses: actions/checkout@v4
             - name: Download html artifact
               uses: actions/download-artifact@v4
               with:
