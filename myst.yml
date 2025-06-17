@@ -19,3 +19,5 @@ project:
   jupyter:
       binder:
         repo: projectpythia/cookbook-template
+  allowDangerousHtml: true
+  
