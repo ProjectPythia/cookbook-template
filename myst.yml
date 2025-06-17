@@ -18,4 +18,4 @@ project:
         - file: notebooks/notebook-template.ipynb
   jupyter:
       binder:
-        repo: projectpythia/cookbook-template  
+        repo: projectpythia/cookbook-template
