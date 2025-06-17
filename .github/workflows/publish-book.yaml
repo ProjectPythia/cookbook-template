@@ -10,8 +10,6 @@ on:
 jobs:
   build:
     uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
-    with:
-      environment_name: cookbook-dev
 
   deploy:
     needs: build
