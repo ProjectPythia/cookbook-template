@@ -5,9 +5,6 @@ extends:
 project:
   title: Project Pythia Cookbook Template - Jupter Book 2
   github: https://github.com/projectpythia/cookbook-template
-  thumbnail: thumbnails/thumbnail.png
-  tags: ["sampletag"]
-  keywords: ["samplekeyword"]
   authors:
     - name: The Project Pythia Community
   copyright: '2024'
