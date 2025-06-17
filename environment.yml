@@ -2,7 +2,6 @@ name: cookbook-dev
 channels:
   - conda-forge
 dependencies:
-  - jupyter-book
   - jupyterlab
   - mystmd
   - jupyterlab-myst
