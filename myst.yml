@@ -18,6 +18,4 @@ project:
         - file: notebooks/notebook-template.ipynb
   jupyter:
       binder:
-        repo: projectpythia/cookbook-template
-  allowDangerousHtml: true
-  
+        repo: projectpythia/cookbook-template  
