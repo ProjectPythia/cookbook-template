@@ -4,7 +4,7 @@ extends:
   - https://raw.githubusercontent.com/projectpythia/pythia-config/main/pythia.yml
 project:
   title: Project Pythia Cookbook Template - Jupter Book 2
-  github: https://github.com/projectpythia-mystmd/cookbook-template
+  github: https://github.com/projectpythia/cookbook-template
   thumbnail: thumbnails/thumbnail.png
   tags: ["sampletag"]
   keywords: ["samplekeyword"]
@@ -21,6 +21,6 @@ project:
         - file: notebooks/notebook-template.ipynb
   jupyter:
       binder:
-        repo: projectpythia-mystmd/cookbook-template
+        repo: projectpythia/cookbook-template
 site:
   template: book-theme
