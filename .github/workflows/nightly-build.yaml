@@ -15,6 +15,10 @@ jobs:
     uses: ProjectPythia/cookbook-actions/.github/workflows/deploy-book.yaml@main
 
 
+  deploy:  # publish the built book on GitHub Pages
+    needs: build
+    uses: ProjectPythia/cookbook-actions/.github/workflows/deploy-book.yaml@main
+
   link-check:
     if: ${{ github.repository_owner == 'ProjectPythia' }}
     uses: ProjectPythia/cookbook-actions/.github/workflows/link-checker.yaml@main
