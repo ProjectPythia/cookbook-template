@@ -1,0 +1,1 @@
+import{a}from"/cookbook-template/_preview/231/build/_shared/chunk-2YEAM2KW.js";import"/cookbook-template/_preview/231/build/_shared/chunk-7H4MNJGC.js";import"/cookbook-template/_preview/231/build/_shared/chunk-ZOXRFJWB.js";import"/cookbook-template/_preview/231/build/_shared/chunk-2NH4LW52.js";export default a();
