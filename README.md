@@ -43,11 +43,11 @@ You can either run the notebooks in the Cookbook using [Binder](https://binder.p
 ### Running on Binder
 
 The simplest way to interact with a Jupyter Notebook is through
-[Binder](https://binder.projectpythia.org/), which enables "one click" 
+[Binder](https://binder.projectpythia.org/), which enables "one click"
 execution in the cloud. Simply navigate your mouse to
 the top right corner of the book chapter you are viewing and click
-on the rocket ship icon (see screenshots [here](https://foundations.projectpythia.org/preamble/how-to-use/#running-pythia-foundations-examples)), 
-and a text box will appear. Type or paste the Pythia Binder link 
+on the rocket ship icon (see screenshots [here](https://foundations.projectpythia.org/preamble/how-to-use/#running-pythia-foundations-examples)),
+and a text box will appear. Type or paste the Pythia Binder link
 (`https://binder.projectpythia.org`) and click "Launch".
 After a few moments you should be presented with a
 notebook that you can interact with. You’ll be able to execute code
