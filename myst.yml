@@ -19,3 +19,8 @@ project:
   jupyter:
       binder:
         repo: projectpythia/cookbook-template
+
+site:
+  domains: []
+  options:
+    analytics_google: G-T52X8HNYE8 # Measurement ID or Tracking ID
