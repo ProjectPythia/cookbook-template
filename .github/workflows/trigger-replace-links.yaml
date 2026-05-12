@@ -10,7 +10,7 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Find and Replace Repository Name
         uses: jacobtomlinson/gha-find-replace@v3
         with:
@@ -28,4 +28,4 @@ jobs:
           exclude: ".github/workflows/trigger-replace-links.yaml"
 
       - name: Push changes
-        uses: stefanzweifel/git-auto-commit-action@v6
+        uses: stefanzweifel/git-auto-commit-action@v7
