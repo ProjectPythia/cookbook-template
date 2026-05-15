@@ -8,7 +8,7 @@ project:
   tags:
     - domain:sampledomain
     - package:samplepackage
-    # - cookbook:build-on-binder
+    - cookbook:build-on-binder
   github: https://github.com/projectpythia/cookbook-template
   authors:
     - name: The Project Pythia Community
