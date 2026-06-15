@@ -42,6 +42,11 @@ authors:
     orcid: https://orcid.org/0000-0001-8155-8038
     website: https://github.com/kmpaul
     affiliation: NVIDIA
+  - family-names: Klucik
+    given-names: Rudy
+    orcid: https://orcid.org/0009-0008-5539-797X
+    website: https://github.com/oftfrfbf
+    affiliation: University of Colorado
   - name: "Cookbook Template contributors" # use the 'name' field to acknowledge organizations
     website: "https://github.com/ProjectPythia/cookbook-template/graphs/contributors"
 title: "Cookbook Template"
