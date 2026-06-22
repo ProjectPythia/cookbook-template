@@ -4,9 +4,15 @@ extends:
   - https://raw.githubusercontent.com/projectpythia/pythia-config/main/pythia.yml
 project:
   title: Project Pythia Cookbook Template
+  thumbnail: ./thumbnails/thumbnail.png
+  tags:
+    - domain:sampledomain
+    - package:samplepackage
+    - cookbook:build-on-binder
   github: https://github.com/projectpythia/cookbook-template
   authors:
     - name: The Project Pythia Community
+      url: https://projectpythia.org
   copyright: '2024'
   toc:
     - file: README.md
