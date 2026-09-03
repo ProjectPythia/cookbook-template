@@ -1,0 +1,4 @@
+set -ex
+
+# Add support for developing with git and GitHub
+conda install -c conda-forge jupyterlab-git gh-scoped-creds
