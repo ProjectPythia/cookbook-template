@@ -1,1 +1,0 @@
-import{c as e}from"/cookbook-template/_preview/271/build/_shared/chunk-RAQ24GF6.js";var n=e((l,t)=>{function a(i){return{name:"Plain text",aliases:["text","txt"],disableAutodetect:!0}}t.exports=a});export default n();
