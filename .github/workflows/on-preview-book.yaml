@@ -1,0 +1,19 @@
+name: on-preview-book
+on:
+  workflow_run:
+    workflows:
+      - preview-book
+    types:
+      - requested
+      - completed
+
+jobs:
+  find-pull-request:
+    uses: ProjectPythia/cookbook-actions/.github/workflows/find-pull-request.yaml@feat/clinder
+
+  preview-comment:
+    needs: find-pull-request
+    uses: ProjectPythia/cookbook-actions/.github/workflows/preview-comment.yaml@feat/clinder
+    with:
+      pull_request_number: ${{ needs.find-pull-request.outputs.number }}
+      sha: ${{ needs.find-pull-request.outputs.sha }}

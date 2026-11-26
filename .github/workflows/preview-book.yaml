@@ -1,0 +1,8 @@
+name: preview-book
+
+on:
+  pull_request:
+
+jobs:
+  build:
+    uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@feat/clinder
